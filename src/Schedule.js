@@ -66,8 +66,9 @@ export class Schedule extends Component {
             {talkData.map((talk, i) => (
               <TouchableOpacity
                 key={i}
+                testID={`Talk: ${talk.speakerName}`}
                 onPress={() => this.props.navigation.push('Talk', talk)}>
-                <View style={styles.talk}>
+                <View testID="talk" style={styles.talk}>
                   <View style={styles.speakerContainer}>
                     <View style={styles.avatarContainer}>
                       <Image
