@@ -1,10 +1,10 @@
 import React from 'react';
 import {Schedule} from './Schedule';
-import renderer from 'react-test-renderer';
+import {render} from '@testing-library/react-native';
 
 describe('Schedule', () => {
   it('Shows both days', () => {
-    const r = renderer.create(<Schedule />);
-    expect(r.toJSON()).toMatchSnapshot();
+    const {getByText} = render(<Schedule />);
+    expect(getByText(/November /i));
   });
 });
