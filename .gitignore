@@ -68,3 +68,4 @@ awsconfiguration.json
 *.jsbundle
 
 amplify/mock-data
+../conference-app-in-a-box/amplify/mock-data

@@ -16,7 +16,6 @@ import {colors, typography, dimensions, logo} from './theme';
 
 import {API, graphqlOperation} from 'aws-amplify';
 import {listTalks} from './graphql/queries';
-import {NavigationScreenProp} from 'react-navigation';
 
 const day1 = 'November 19';
 const day2 = 'November 20';
